@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderDao {
+	
+	// SOME CHANGES IN GIT COURSE
+	
     public Order getOrder(Long id) {
         Session session = HibernateConfig.INSTANCE.getSessionFactory().openSession();
         Order order = session.get(Order.class, id);
